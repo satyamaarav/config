@@ -2,7 +2,7 @@ server:
   port: 9093   # Change per service
 
 spring:
-    datasource:
+  datasource:
     url: jdbc:mysql://localhost:3306/ratingdb
     username: root
     password: root

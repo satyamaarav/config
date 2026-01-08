@@ -2,20 +2,16 @@ server:
   port: 9092
 
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/userdb
-    username: postgres
-    password: root
-    driver-class-name: org.postgresql.Driver
+    data:
+    mongodb:
+      uri: mongodb://localhost:27017/hotelservice_db
+      # Alternative configuration
+      # host: localhost
+      # port: 27017
+      # database: hotelservice_db
+      # username: root
+      # password: password
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
-    show-sql: true
 
 eureka:
   client:

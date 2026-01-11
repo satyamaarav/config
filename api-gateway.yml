@@ -1,3 +1,6 @@
+server:
+  port: 9094
+
 spring:
   cloud:
     gateway:
